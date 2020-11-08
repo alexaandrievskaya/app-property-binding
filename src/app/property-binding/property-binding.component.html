@@ -1,0 +1,21 @@
+<h2>Привязка свойств</h2>
+
+<img [src]="imageSrc" [alt]="imageAlt" [title]="imageTitle">
+
+<br>
+
+<img src="{{imageSrc}}" alt="{{imageAlt}}" title="{{imageTitle}}">
+
+<br>
+
+<label>
+  <input checked="{{isChecked}}" type="checkbox">
+  <strong>{{isChecked}}</strong>, элемент отмечен некорректно
+</label>
+
+<br>
+
+<label>
+  <input id="successful" [checked]="isChecked" type="checkbox">
+  <strong>{{isChecked}}</strong>, элемент отмечен правильно
+</label>
